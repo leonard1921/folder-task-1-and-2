@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tsk 2 Js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="task 2.js"></script>
+  </head>
+
+  <style>
+    .main-container {
+      display: inline-block;
+      padding: 15px;
+      border: 2px solid black;
+    }
+  </style>
+  <script>
+function multiplication(){
+    num1 = document.getElementById("fNum").value;
+    num2 = document.getElementById("SNum").value;
+    equal1 = (parseInt(num1) * parseInt(num2));
+
+    document.getElementById("total").innerHTML = equal1;
+}
+function divition(){
+    num1 = document.getElementById("fNum").value;
+    num2 = document.getElementById("SNum").value;
+    equal2 = (parseInt(num1) / parseInt(num2));
+
+    document.getElementById("total").innerHTML = equal2;
+}
+  </script>
+  <body>
+    <h1>Task-1</h1>
+    <div class="main-container">
+      <p>
+        1st Number
+        <input type="text" id="fNum" />
+      </p>
+      <p>
+        2nd Number
+        <input type="text" id="SNum" />
+      </p>
+      <input type="button" value="Multiply" onclick="multiplication()" />
+      <input type="button" value="Divide" onclick="divition()" />
+      <p>The result is:</p>
+      <p id="total"></p>
+    </div>
+  </body>
+</html>
